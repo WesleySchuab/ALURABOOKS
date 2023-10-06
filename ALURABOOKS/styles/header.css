@@ -1,0 +1,40 @@
+.cabeçalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    /* os dois pontos é para voltar par ao diretorio anterior */
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cabeçalho{
+    background-color: var(--branco);
+    /* libera novas funcionalidades */
+    display: flex;
+    /* divide os espaço entre os itens */
+    /* divide os espaço entre os itens */
+    justify-content: space-between;
+    align-items: center;
+    /* Para colocar o menu abaixo do icone libera opção de colocar outros atributos como top left*/
+    position: relative;
+}
+
+/* Transormar os continer em flex itens para alinhas os icones */
+.container{
+    display: flex;
+    align-items: center;
+}
+.container__imagem{
+    padding: 1em;
+}
+.lista__menu{
+    display: none;
+    /* permite que movimente o elemento de acordo com elemento pai  */
+    position: absolute;
+    /* coloca a lista em baixo */
+    top: 100%;
+}
+/* ~ procura um outro elemento que seguido do anterior */
+.container__botao:checked~.lista__menu{
+    display: block;
+}
