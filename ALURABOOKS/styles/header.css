@@ -27,7 +27,7 @@
 .container__imagem{
     padding: 1em;
 }
-.lista__menu{
+.lista-menu{
     display: none;
     /* permite que movimente o elemento de acordo com elemento pai  */
     position: absolute;
@@ -35,6 +35,12 @@
     top: 100%;
 }
 /* ~ procura um outro elemento que seguido do anterior */
-.container__botao:checked~.lista__menu{
+.container__botao:checked~.lista-menu{
     display: block;
 }
+.lista-menu,
+.lista-menu__titulo{
+padding: 1em;
+background-color: var(--branco);
+}
+.lista-menu__item
